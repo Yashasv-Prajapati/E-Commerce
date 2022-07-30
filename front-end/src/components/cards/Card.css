@@ -1,0 +1,60 @@
+body{
+    font-family: 'Nunito';
+}
+
+.card-container{
+    position: relative;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-image img{
+    width: 100px;
+}
+
+.product-name{
+    width: 800px;
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.product-price{
+    font-family: 'Nunito';
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-now, .add-to-cart{
+    width: 100px;
+    margin: 3px;
+    border-radius: 100rem;
+    border: none;
+    padding: 5px;
+    background-color: #FB8A6B;
+    font-weight: bold;
+    color: white;
+}
+
+.buy-now:hover, .add-to-cart:hover{
+    background-color: #fb8a6be7;
+}
+
+.buy-now:active, .add-to-cart:active{
+    background-color: #fb8a6bca;
+}
+
+

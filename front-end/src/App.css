@@ -1,0 +1,103 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@500;600;700&display=swap');
+/*  */
+/* Nav Bar CSS */
+.App{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.nav-ul li{
+  padding: 10px;
+  font-family:'Nunito', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: right;
+  list-style-type: none;
+}
+
+.nav-ul li a{
+  color: #282c34;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-ul li a:hover{
+  color:#282c34c4;
+  background-color: #84878d9d;
+}
+
+.nav-ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.nav-ul-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+#logo{
+  position: relative;
+  height: 50px;
+
+  /* border: 1px solid red; */
+}
+
+/* Nav Bar CSS ends */
+
+/* Footer CSS */
+.footer-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  margin-top: 300px;
+}
+
+.address{
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  width: 33.33%;
+  word-wrap: break-word;
+}
+
+
+/* Footer CSS ends */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

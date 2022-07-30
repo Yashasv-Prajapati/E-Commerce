@@ -1,0 +1,18 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#user-img{
+    padding: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.profile-content{
+    font-family: 'Nunito';
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+}
