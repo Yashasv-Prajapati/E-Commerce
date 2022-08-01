@@ -18,7 +18,6 @@ function AddProduct() {
                 'Content-Type':'application/json'
             }
         });
-        // AddProduct = await AddProduct.json();
         navigate('/products');
     }
 

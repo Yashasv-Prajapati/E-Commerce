@@ -1,7 +1,5 @@
 const express = require('express');
-const mongoose = require('mongoose');
 const cors = require('cors');
-const multer = require('multer')
 require('./db/config');
 const User = require('./db/user'); 
 const Product = require('./db/product');
@@ -30,6 +28,7 @@ app.post('/login', async(request, response)=>{
     
     if(request.body.username !== undefined && request.body.password !== undefined && request.body.username !== '' && request.body.password !== ''){
         if(checkUser === null){
+            UserData = 'Some Error Occured'
             checkUser = {"username":null, "password":null};
             response.send({"username":null, "password":null});
         }else{
@@ -37,6 +36,7 @@ app.post('/login', async(request, response)=>{
             response.send(checkUser);
         }
     }else{
+        UserData = 'Some Error Occured'
         checkUser = {"username":null, "password":null};
         response.send({"username":null, "password":null});
     }
@@ -50,21 +50,6 @@ app.get('/products', async (request, response)=>{
     let products = await Product.find();
     response.send(products);
 });
-
-
-// const upload = multer({
-//     storage:multer.diskStorage({
-//         destination: function(request, file, callback){
-//             callback(null,'../front-end/public/images')
-//         },
-//         filename(request, file, callback){
-//             callback(null, file.fieldname+'_'+Date.now()+'.png')
-//         }
-//     })
-// }).single('user_file');
-// app.post('/upload', upload, async(request, response)=>{
-//     response.send('file uploaded');
-// })
 
 app.post('/add', async (request, response)=>{
     let newProduct = new Product(request.body);
