@@ -19,7 +19,7 @@ function Profile() {
   return (
     <div className="profile-container">
         <div className="profile-image">
-            <img id = "user-img" src="../user.png" alt="User" />
+            <img id = "user-img" src="../images/user.png" alt="User" />
         </div>
 
         <div className="profile-content">

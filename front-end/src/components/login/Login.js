@@ -48,13 +48,13 @@ function Login() {
           setCheckCredentials("Wrong Credentials");
         }
 
-        if(username==''){
+        if(username===''){
           setEnterUsername("ENTER USERNAME");
         }else{
           setEnterUsername("");
         }
         
-        if(password == ''){
+        if(password === ''){
           setEnterPassword("ENTER PASSWORD");
         }else{
           setEnterPassword("");

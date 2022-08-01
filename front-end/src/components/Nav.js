@@ -21,7 +21,7 @@ function Nav() {
 
             <div className='nav-logo'>
                 <li>
-                    <img id="logo" src="../logo.png" alt="EComm" />
+                    <img id="logo" src="../../images/logo.png" alt="EComm" />
                 </li>
             </div>
 
