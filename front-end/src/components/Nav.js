@@ -26,10 +26,9 @@ function Nav() {
             </div>
 
             <div className='nav-ul-items'>
+                <li><Link to = "/search">Search</Link></li>
                 <li><Link to = "/products">Products</Link></li>
                 <li><Link to = "/add">Add </Link></li>
-                <li><Link to = "/update">Update </Link></li>
-                <li><Link to = "/delete">Delete </Link></li>
                 <li><Link onClick={logout} to="/login">Logout</Link></li>
                 <li><Link to = "/profile">Profile</Link></li>
             </div>

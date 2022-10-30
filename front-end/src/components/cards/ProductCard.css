@@ -10,7 +10,7 @@ body{
     /* padding: 30px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
     /* margin: 10px 0 10px 0; */
 }

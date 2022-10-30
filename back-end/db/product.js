@@ -4,7 +4,8 @@ const productSchema = new mongoose.Schema({
     productName: String,
     productPrice: Number,
     productBrand: String,
-    productDeliveryType: String
+    productDeliveryType: String,
+    userId: String
 });
 
 const Product = mongoose.model('products', productSchema);

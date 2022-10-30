@@ -21,9 +21,6 @@ function Login() {
     const navigate = useNavigate();
     
     const handleLogin = async ()=>{
-      
-        // console.log(username);
-        // console.log(password);
 
         let result = await fetch('http://localhost:5000/login', {
             method:'post', 

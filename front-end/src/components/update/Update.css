@@ -1,0 +1,43 @@
+.update-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 100px auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+}
+
+.product-name-box, .product-brand-box, .product-price-box, .product-delivery-type-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    margin: 10px;
+}
+
+input{
+    width: 400px;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.update-btn{
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(251, 95, 5);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 100rem;
+    border: none;
+}
+
+.update-btn:hover{
+    background-color: rgba(251, 95, 5, 0.836);
+}
+
+.update-btn:active{
+    background-color:rgba(251, 95, 5, 0.663);
+}

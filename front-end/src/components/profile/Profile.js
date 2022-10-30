@@ -14,16 +14,23 @@ function Profile() {
         result = await result.json();
         setUsername(result.username);
     }
+    const CartItems='';
+
     ProfileData();
     
   return (
-    <div className="profile-container">
+    <div className="profile-container container">
         <div className="profile-image">
             <img id = "user-img" src="../images/user.png" alt="User" />
         </div>
 
+
         <div className="profile-content">
            {Username}
+        </div>
+        
+        <div className="cart-container container d-flex align-items-center justify-content-center">
+            Items in your Cart: {CartItems}
         </div>
 
     </div>

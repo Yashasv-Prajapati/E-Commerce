@@ -4,7 +4,7 @@ import ProductCard from '../cards/ProductCard';
 
 function Products() {
 
-    const [productList, setProducts] = useState([]);
+    const [productsList, setProducts] = useState([]);
 
     useEffect(()=>{
         getProductList();
@@ -19,18 +19,22 @@ function Products() {
             }
         });
         productList = await productList.json();
+        console.log(typeof productList);
+    
         setProducts(productList);
     }
 
+    
 
   return (
     <div className="products-container">
         {
-            productList.map((product)=>(
+            productsList.map((product)=>(
                 <ProductCard productName = {product.productName} 
                 productPrice = {product.productPrice}
                 productBrand = {product.productBrand}
                 productDeliveryType = {product.productDeliveryType}
+                product_ID = {product.userId}
                 />
             ))
         }
